@@ -9,10 +9,16 @@ var mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
 mongoose.connect("mongodb://localhost:27017/Questionnaire");
 var nameSchema = new mongoose.Schema({
-    firstName: String,
-    lastName: String,
+    participantNo: String,
+    age: Number,
+    sex: String,
     occupation: String,
-    hand: String,
+    handOfUse: String,
+    //handOfUses: [{right: String, left: string}]
+    os:[{andriod:Boolean, iOS: Boolean, blackBerry: Boolean, otherOs: Boolean}],
+    //response: [best{easeOfUse: Number, easeOfLearning: Number, etc}],
+    response: [best{easeOfUse: Number, easeOfLearning: Number, etc}],
+
 
 });
 var User = mongoose.model("User", nameSchema);

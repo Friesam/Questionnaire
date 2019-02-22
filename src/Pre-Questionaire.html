@@ -30,13 +30,13 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li class="active">
-                            <a href=" C:\Users\Admin\Desktop\layoutit\src\index.html">Home</a>
+                            <a href="file:///C:\Users\frieda\Downloads\Questionnaire\src\index.html">Home</a>
                         </li>
                         <li>
-                            <a href=" C:\Users/frieda/Downloads/questionnaire/src/Pre-Questionaire.html">Pre-Questionnaire</a>
+                            <a href="file:///C:\Users\frieda\Downloads\Questionnaire\src\Pre-Questionaire.html">Pre-Questionnaire</a>
                         </li>
                         <li>
-                            <a href="C:\Users/frieda/Downloads/questionnaire/src/postQuestionaire%20.html">Post-Questionnaire</a>
+                            <a href="file:///C:\Users\frieda\Downloads\Questionnaire\src\postQuestionaire.html">Post-Questionnaire</a>
                         </li>
                         
                     </ul>
@@ -110,14 +110,14 @@
 </div>
 
 <div class="grid-container">
-    <form action="/action_page.php">
+    <form action="/action_page">
         <table id = "mainTable">
         <h3>
             Get in Touch with Us:
         </h3>
         <tr>
             <td><label for="fname">Participant Number:</label></td> 
-            <td><input type="text" id="fname" name="firstname" placeholder="Your name.."></td>
+            <td><input type="text" id="participantNo" name="participantNo" placeholder="Your name.."></td>
         </tr>
        
 
@@ -126,7 +126,7 @@
                     <label for="lname">Participant Age:</label>
             </td>
                 <td>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <input type="text" id="age" name="age" placeholder="Your last name..">
                 </td>
         </tr>
 
@@ -154,8 +154,10 @@
             <td>
                 <label for="hand">Are you right handed :</label>
             </td>
-            <td>
-                <input type="text" id="hand" name="hand" placeholder="What hand do you use?">
+            <td><select id="handOfUse" name="handOfUse">
+                <option value="righthanded">Right Hand</option>
+                <option value="lefthanded">Left Hand</option>
+            </select>
             </td>
         </tr>
 
@@ -168,19 +170,19 @@
                 <td>
                     <label for ="os">
                         Andriod
-                        <input id="p1" type="radio" name="Andriod">
+                        <input id="p1" type="radio" name="andriod">
                     </label>
                     <label for="os">
                         iOS
                         <input id="p2" type="radio" name="iOS">
                     </label>
-                    <label for = "Windows">
+                    <label for = "Blackberry">
                         Windows
-                            <input id="p3" type="radio" name="Windows">
+                            <input id="p3" type="radio" name="blackberry">
                     </label>
-                    <label for = "os">
+                    <label for = "otherOs">
                         Others
-                            <input id="p4" type="radio" name="Others">
+                            <input id="p4" type="radio" name="otherOs">
                     </label>
                 </td>
         </tr>
@@ -195,36 +197,181 @@
             <thead>
                 <tr> 
                         <th></th> 
-                        <th>Never Used</th>
-                        <th>Do Not Use Regularly</th> 
-                        <th>1 - 5 Hours</th> 
-                        <th>5 - 10 Hours</th>
-                        <th>10 - 20 Hours</th> 
-                        <th>20+ Hours </th>   
+                        <th><label>Never Used</label></th>
+                        <label><th>Do Not Use Regularly</label></th>
+                        <label><th>1 - 5 Hours</label></th> 
+                        <label><th>5 - 10 Hours</label></th>
+                        <label><th>10 - 20 Hours</label</th> 
+                        <label><th>20+ Hours </label></th>   
                     </tr> 
             </thead> 
           
             <tr> 
-                <td>Using smartphones, tablets and wearables</td> 
+                <td><label>Using smartphones, tablets and wearables </label></td> 
+                <td>
+					<input id="b3" type="radio" name="neverUsed">
+                  </td>
+                  <td>
+					<input id="b3" type="radio" name="notechconlist">
+                  </td>
+                  <td>
+					<input id="b3" type="radio" name="notechconlist">
+                  </td>
+                  <td>
+					<input id="b3" type="radio" name="notechconlist">
+                  </td>
+                  <td>
+					<input id="b3" type="radio" name="notechconlist">
+                  </td>
+                  <td>
+					<input id="b3" type="radio" name="notechconlist">
+				  </td>
             </tr>
             <tr>
-                <td>Online searching or shopping (e.g. google, amazon)</td> 
-            </tr>
-            <tr>
-                <td>Social networking (e.g. Facebook, Instagram, twitter)</td>
-            </tr>
-            <tr>
-                <td>First-person style games (e.g. GTA, World of Warcraft)</td>
-            </tr>
-            <tr>
-                <td>Other types of games (on smartphone or desktop pc)</td>
-            </tr>
-            <tr>
-                <td>Using immersive devices for gaming (e.g. Head-mounted display)
+                <td><label>Searching or shopping (e.g. google, amazon)
+                </label> </td> 
+                <td>
+					<input id="b3" type="radio" name="notechconlist">
+                  </td>
+                  <input id="b3" type="radio" name="notechconlist">
                 </td>
+                <td>
+                  <input id="b3" type="radio" name="notechconlist">
+                </td>
+                <td>
+                  <input id="b3" type="radio" name="notechconlist">
+                </td>
+                <td>
+                  <input id="b3" type="radio" name="notechconlist">
+                </td>
+                <td>
+                  <input id="b3" type="radio" name="notechconlist">
+                </td>
+                <td>
+					<input id="b3" type="radio" name="notechconlist">
+                  </td>
             </tr>
             <tr>
-                <td>Using immersive devices for other purposes</td>
+                <td><label>Social networking (e.g. Facebook, Instagram, twitter)
+                </label></td>
+                <td>
+					<input id="b3" type="radio" name="notechconlist">
+                  </td>
+                  <input id="b3" type="radio" name="notechconlist">
+                </td>
+                <td>
+                  <input id="b3" type="radio" name="notechconlist">
+                </td>
+                <td>
+                  <input id="b3" type="radio" name="notechconlist">
+                </td>
+                <td>
+                  <input id="b3" type="radio" name="notechconlist">
+                </td>
+                <td>
+                  <input id="b3" type="radio" name="notechconlist">
+                </td>
+                <td>
+					<input id="b3" type="radio" name="notechconlist">
+                  </td>
+            </tr>
+            <tr>
+                <td><label>First-person style games (e.g. GTA, World of Warcraft)
+                </label></td>
+                <td>
+					<input id="b3" type="radio" name="notechconlist">
+                  </td>
+                  <input id="b3" type="radio" name="notechconlist">
+                </td>
+                <td>
+                  <input id="b3" type="radio" name="notechconlist">
+                </td>
+                <td>
+                  <input id="b3" type="radio" name="notechconlist">
+                </td>
+                <td>
+                  <input id="b3" type="radio" name="notechconlist">
+                </td>
+                <td>
+                  <input id="b3" type="radio" name="notechconlist">
+                </td>
+                <td>
+					<input id="b3" type="radio" name="notechconlist">
+                  </td>
+            </tr>
+            <tr>
+                <td><label>types of games (on smartphone or desktop pc)
+                </label> </td>
+                <td>
+					<input id="b3" type="radio" name="notechconlist">
+                  </td>
+                  <input id="b3" type="radio" name="notechconlist">
+                </td>
+                <td>
+                  <input id="b3" type="radio" name="notechconlist">
+                </td>
+                <td>
+                  <input id="b3" type="radio" name="notechconlist">
+                </td>
+                <td>
+                  <input id="b3" type="radio" name="notechconlist">
+                </td>
+                <td>
+                  <input id="b3" type="radio" name="notechconlist">
+                </td>
+                <td>
+					<input id="b3" type="radio" name="notechconlist">
+                  </td>
+            </tr>
+            <tr>
+                <td><label>Immersive devices for gaming (e.g. Head-mounted display)
+                </label> 
+                </td>
+                <td>
+					<input id="b3" type="radio" name="notechconlist">
+                  </td>
+                  <input id="b3" type="radio" name="notechconlist">
+                </td>
+                <td>
+                  <input id="b3" type="radio" name="notechconlist">
+                </td>
+                <td>
+                  <input id="b3" type="radio" name="notechconlist">
+                </td>
+                <td>
+                  <input id="b3" type="radio" name="notechconlist">
+                </td>
+                <td>
+                  <input id="b3" type="radio" name="notechconlist">
+                </td>
+                <td>
+					<input id="b3" type="radio" name="notechconlist">
+                  </td>
+            </tr>
+            <tr>
+                <td><label>immersive devices for other purposes
+                </label></td>
+                <td>
+					<input id="b3" type="radio" name="notechconlist">
+                  </td>
+                  	<input id="b3" type="radio" name="notechconlist">
+                  </td>
+                  <td>
+					<input id="b3" type="radio" name="notechconlist">
+                  </td>
+                  <td>
+					<input id="b3" type="radio" name="notechconlist">
+                  </td>
+                  <td>
+					<input id="b3" type="radio" name="notechconlist">
+                  </td>
+                  <td>
+					<input id="b3" type="radio" name="notechconlist">
+                  </td>
+                  <td>
+					<input id="b3" type="radio" name="notechconlist">
+                  </td>
+                  
             </tr>
         </td></tr>  
                 
@@ -257,7 +404,7 @@
                 <input type="submit" value="Submit">
             </td>
         </tr>
-    </table>
+        </table>
     </form>
 
 </div>
